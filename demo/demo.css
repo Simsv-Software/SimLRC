@@ -1,0 +1,17 @@
+
+@font-face{font-family:'icon';src:url('//s4.zstatic.net/ajax/libs/remixicon/4.2.0/remixicon.woff2');}
+html{background:#F9F9FB;}
+body{margin:0;overflow:hidden;}
+font{font-family:icon;}
+*{scrollbar-width:none;box-sizing:border-box;user-select:none;outline:none;}
+::-webkit-scrollbar{display:none;}
+
+button{background:#0292FE;color:white;border:0;border-radius:5px;padding:5px 20px;font-size:1rem;transition:filter .2s;font-family:inherit;height:40px;}
+button:hover{filter:brightness(.95);}
+button:active{filter:brightness(.9);}
+audio{margin-bottom:10px;width:100%;}
+textarea{background:white;border-radius:5px;border:0;margin-bottom:10px;height:100%;resize:none;padding:5px 10px;white-space:nowrap;}
+
+#input{position:fixed;left:10px;top:10px;height:calc(100% - 20px);width:calc(50% - 15px);display:flex;flex-direction:column;}
+#render{position:fixed;right:10px;top:10px;height:calc(100% - 20px);width:calc(50% - 15px);background:white;}
+#container{width:100%;height:100%;}

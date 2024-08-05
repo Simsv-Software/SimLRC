@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="demo.css">
+		<link rel="stylesheet" href="../simlrc.css">
+		<title>SimLRC Demo</title>
+	</head>
+	<body>
+		
+		<div id="input">
+			<textarea id="lrcInput" placeholder="歌词文本（LRC 格式）...">[00:00.00]风吹故里
+[00:16.41]风声静谧 秋雨依依
+[00:22.53]时光又锁住一年的雨季
+[00:31.11]潮湿空气 几分熟悉
+[00:37.56]像那时相遇 你身上的气息
+[00:44.83][01:40.17]黑白记忆 如同电影
+[00:49.64][01:44.89]遗憾的剧情用离别布景
+[00:53.09][01:48.39]漫长流年 独你缺席
+[00:56.30][01:51.53]残缺的结局 是我一个人的独角戏
+[00:59.73][01:54.91][02:24.42]我把思念写尽风中 吹过故里
+[01:03.99][01:59.22][02:28.73]多想能落在你怀里 片刻光景
+[01:07.67][02:02.91][02:32.61]可数不清的四季 已抹去爱的痕迹
+[01:14.31][02:09.69][02:39.18]我把回忆轻轻拾起 放在掌心
+[01:18.69][02:13.96][02:43.56]可惜你模糊的身影 无法靠近
+[01:22.39][02:17.77][02:47.30]无数个失眠夜里 伤痛又会被唤醒
+这是一行没啥用的文本，不会被渲染在歌词中
+你可以尝试编辑或打乱歌词后再次点击「渲染」按钮查看效果
+默认配置下，时间标签相同的不同歌词将作为多语言翻译渲染
+</textarea>
+			<textarea id="confInput" placeholder="配置信息（JSON 格式），详情查看文档 ..."></textarea>
+			<audio src="demo.webm" controls id="audio"></audio>
+			<button onclick="render()">渲染 <font>&#xEA6C;</font></button>
+		</div>
+
+		<div id="render">
+			<div id="container">
+				<div style="position:absolute;opacity:.5;inset:0;margin:auto;width:fit-content;height:fit-content;">按「渲染」以开始</div>
+			</div>
+		</div>
+
+		
+
+		<script src="../simlrc.js"></script>
+		<script src="demo.js"></script>
+	</body>
+</html>

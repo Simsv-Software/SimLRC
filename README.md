@@ -3,6 +3,13 @@
  
 ![simlrc](https://github.com/user-attachments/assets/38a5b970-92a6-4034-8652-150898081794)
 
+## 主要特色
+- CSS + JS 快速引入，无需任何依赖项
+- 支持歌词中同行存在多个时间标签
+- 支持将时间标签相同的歌词作为双语翻译合并输出
+- 界面优雅，支持配置层级模糊，如预览图所示
+- 支持自动去除无关内容和空行
+
 ## 在线演示站
 https://yanji314.github.io/SimLRC/demo/
 
@@ -48,3 +55,6 @@ const options = {
 	callback: console.log // 在歌词更新时，将调用 callback(text)，用于设置网页标题等需求使用
 };
 ```
+
+## 兼容性
+仅兼容各主流内核最新版本，有兼容性需求请自行添加 Polyfill。

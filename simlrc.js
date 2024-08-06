@@ -83,7 +83,10 @@ class SimLRC {
 					if (!div.classList.contains("active") && options.callback) options.callback(div.innerText);
 					if (!div.classList.contains("active") || forceScroll) {
 						// 取消用户滚动模式
-						if (forceScroll) container.classList.remove("scrolling");
+						if (forceScroll) {
+							container.classList.remove("scrolling");
+							clearTimeout(this.scrollTimeoutId);
+						}
 						// 设置为当前歌词并滚动
 						div.classList.add("active");
 						if (!container.classList.contains("scrolling")) div.scrollIntoView({ behavior: "smooth", block: "center" });

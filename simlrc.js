@@ -12,7 +12,7 @@ class SimLRC {
 			if (!tags || !text) continue;
 			tags.forEach(tag => {
 				const [minutes, seconds] = tag.split(':').map(Number);
-				const msTime = minutes * 60000 + seconds * 1000;
+				const msTime = Math.round(minutes * 60000 + seconds * 1000);
 				if (msTime || msTime === 0) {
 					if (!this.lrcParsed[msTime]) this.lrcParsed[msTime] = [];
 					this.lrcParsed[msTime].push(text);
@@ -39,7 +39,6 @@ class SimLRC {
 			scrollTimeout: 3000,
 		};
 		options = Object.assign(defaultOptions, options);
-		console.log(options)
 		// 渲染歌词HTML
 		container.innerHTML = "";
 		for (let timestamp in this.lrcParsed) {

@@ -11,7 +11,7 @@
 - 支持自动去除无关内容和空行
 
 ## 在线演示站
-https://yanji314.github.io/SimLRC/demo/
+https://simsv-software.github.io/SimLRC/demo/
 
 ## 基本用法
 1. 引入 SimLRC 的 css 和 js 文件
